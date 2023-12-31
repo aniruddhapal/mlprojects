@@ -1,3 +1,27 @@
+'''
+'data_ingestion.py'
+
+Purpose:
+
+This script is responsible for ingesting raw data, performing train-test split, and saving the datasets into separate files.
+
+Key Components:
+
+1. DataIngestionConfig: A data class that holds default file paths for the training, testing, and raw data.
+2. DataIngestion: The main class responsible for data ingestion. It reads a CSV file (notebook/data/stud.csv), performs train-test split, and saves the datasets.
+
+Steps:
+
+1. Read the raw dataset ('notebook/data/stud.csv') into a Pandas DataFrame (df).
+2. Create directories for the output files if they don't exist.
+3. Save the raw dataset to a CSV file (self.ingestion_config.raw_data_path).
+4. Perform train-test split on the DataFrame.
+5. Save the training and testing datasets into separate CSV files.
+6. Return the paths of the training and testing datasets.
+
+Execution:
+If the script is run directly (__name__ == "__main__"), an instance of DataIngestion is created, and the initiate_data_ingestion method is called to perform data ingestion.'''
+
 import os
 import sys
 from src.exception import CustomException

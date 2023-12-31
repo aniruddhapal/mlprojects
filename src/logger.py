@@ -1,3 +1,21 @@
+'''
+'logger.py'
+
+Purpose:
+This script sets up a logging system for the project.
+
+Key Components:
+
+Sets up a logging configuration, including a filename based on the current date and time.
+
+Steps:
+1. Create a logs directory if it doesn't exist.
+2. Configure the logging system to write logs to a file with a timestamped filename.
+
+Execution:
+If run as the main script, it logs a message indicating that logging has started.
+'''
+
 import logging
 import os
 from datetime import datetime

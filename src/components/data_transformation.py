@@ -1,3 +1,31 @@
+'''
+'data_transformation.py'
+
+Purpose:
+
+This script is responsible for preprocessing and transforming the input data for machine learning.
+
+Key Components:
+
+1. DataTransformationConfig: A data class holding the file path for saving the preprocessor object.
+2. DataTransformation: The main class responsible for data transformation. It defines a preprocessing pipeline and saves the preprocessor object.
+
+Steps:
+
+1. Define numerical and categorical columns.
+2. Create a preprocessing pipeline for numerical and categorical columns separately.
+3. Use a ColumnTransformer to combine the numerical and categorical pipelines.
+4. Read training and testing datasets.
+5. Obtain the preprocessing object.
+6. Apply the preprocessing object to the datasets.
+7. Save the preprocessing object.
+8. Return the transformed training and testing arrays and the path to the saved preprocessor object.
+
+Execution:
+If imported as a module, the classes and functions are available for use in other scripts.
+'''
+
+
 import sys
 from dataclasses import dataclass
 
