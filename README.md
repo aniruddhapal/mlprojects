@@ -7,7 +7,8 @@
 </head>
 <body>
     <h1>Student Performance Indicator</h1>
-    <h2>Life cycle of Machine Learning Project</h2>
+
+    <h2>Life Cycle of Machine Learning Project</h2>
     <ol>
         <li>Understanding the Problem Statement</li>
         <li>Data Collection</li>
